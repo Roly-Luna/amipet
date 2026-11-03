@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es-419">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#A88AED" name="theme-color"/>
+  <meta content="AmiPet, plataforma de adopci&oacute;n responsable de mascotas." name="description"/>
+  <title>
+   Formulario de postulaci&oacute;n | AmiPet
+  </title>
+  <link href="../../css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Saltar al contenido
+  </a>
+  <header class="site-header">
+   <div class="layout-container site-header__inner">
+    <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+     <span aria-hidden="true" class="brand__mark">
+      <svg viewbox="0 0 24 24">
+       <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+       </ellipse>
+       <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+       </path>
+      </svg>
+     </span>
+     <span>
+      AmiPet
+     </span>
+    </a>
+    <nav aria-label="Navegaci&oacute;n principal" class="site-nav">
+     <a href="catalogo.html">
+      Adoptar
+     </a>
+     <a href="../../index.html#como-funciona">
+      C&oacute;mo funciona
+     </a>
+     <a href="../publico/quienes-somos.html">
+      Nosotros
+     </a>
+    </nav>
+    <div class="site-header__actions">
+     <a class="button button--outline" href="../auth/login.html">
+      Iniciar sesi&oacute;n
+     </a>
+     <a class="button button--primary" href="../auth/registro.html">
+      Crear cuenta
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="layout-container page-intro">
+    <span class="eyebrow">
+     <span class="eyebrow__dot">
+     </span>
+     Postulaci&oacute;n
+    </span>
+    <h1>
+     Formulario de postulaci&oacute;n
+    </h1>
+    <p>
+     Completa los datos para postularte a adoptar a Luna.
+    </p>
+   </section>
+   <section class="layout-container page-content">
+    <div class="content-grid">
+     <form class="panel form-stack" action="confirmacion.html" method="get">
+      <article class="list-item">
+       <div aria-label="Fotograf&iacute;a de Luna" class="pet-photo pet-photo--luna" role="img">
+       </div>
+       <div class="list-item__main">
+        <h3>
+         Luna
+        </h3>
+        <p>
+         Perro &middot; 2 a&ntilde;os &middot; Mediano &middot; Surco
+        </p>
+        <span class="status status--available">
+         Disponible
+        </span>
+       </div>
+      </article>
+      <div class="form-grid">
+       <div class="form-field">
+        <label class="form-field__label" for="experience">
+         Experiencia previa con mascotas
+        </label>
+        <select class="form-field__control" id="experience" required="">
+         <option value="">
+          Selecciona una opci&oacute;n
+         </option>
+         <option>
+          Primera vez
+         </option>
+         <option>
+          He tenido mascotas
+         </option>
+         <option>
+          Convivo actualmente con mascotas
+         </option>
+        </select>
+       </div>
+       <div class="form-field">
+        <label class="form-field__label" for="other-pets">
+         Otros animales en casa
+        </label>
+        <select class="form-field__control" id="other-pets" required="">
+         <option value="">
+          Selecciona una opci&oacute;n
+         </option>
+         <option>
+          No tengo
+         </option>
+         <option>
+          Perro
+         </option>
+         <option>
+          Gato
+         </option>
+         <option>
+          Otros
+         </option>
+        </select>
+       </div>
+       <div class="form-field">
+        <label class="form-field__label" for="housing">
+         Tipo de vivienda
+        </label>
+        <select class="form-field__control" id="housing" required="">
+         <option value="">
+          Selecciona una opci&oacute;n
+         </option>
+         <option>
+          Departamento
+         </option>
+         <option>
+          Casa
+         </option>
+        </select>
+       </div>
+       <div class="form-field">
+        <label class="form-field__label" for="yard">
+         &iquest;Cuenta con patio o jard&iacute;n?
+        </label>
+        <select class="form-field__control" id="yard" required="">
+         <option value="">
+          Selecciona una opci&oacute;n
+         </option>
+         <option>
+          S&iacute;
+         </option>
+         <option>
+          No
+         </option>
+        </select>
+       </div>
+       <div class="form-field form-field--full">
+        <label class="form-field__label" for="alone-hours">
+         Horas promedio que pasar&aacute; sola la mascota al d&iacute;a
+        </label>
+        <input class="form-field__control" id="alone-hours" max="24" min="0" placeholder="Ej.: 4 horas" required="" type="number"/>
+       </div>
+       <div class="form-field form-field--full">
+        <label class="form-field__label" for="motivation">
+         &iquest;Por qu&eacute; te gustar&iacute;a adoptar a Luna?
+        </label>
+        <textarea class="form-field__control" id="motivation" placeholder="Cu&eacute;ntanos tu motivaci&oacute;n, espacio y estilo de vida..." required=""></textarea>
+       </div>
+      </div>
+      <div class="note-box">
+       Revisa tus respuestas antes de enviarlas. El rescatista evaluar&aacute; la informaci&oacute;n y se comunicar&aacute; contigo si necesita m&aacute;s detalles.
+      </div>
+      <button class="button button--primary" type="submit">Enviar postulaci&oacute;n</button>
+     </form>
+     <aside class="panel">
+      <h2>
+       Antes de postular
+      </h2>
+      <ul class="check-list">
+       <li>
+        <span class="check-list__mark">
+         &checkmark;
+        </span>
+        <span>
+         Considera el tiempo disponible para paseos y adaptaci&oacute;n.
+        </span>
+       </li>
+       <li>
+        <span class="check-list__mark">
+         &checkmark;
+        </span>
+        <span>
+         Conversen en casa sobre las responsabilidades.
+        </span>
+       </li>
+       <li>
+        <span class="check-list__mark">
+         &checkmark;
+        </span>
+        <span>
+         Prepara un espacio seguro para Luna.
+        </span>
+       </li>
+      </ul>
+     </aside>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer" id="redes">
+   <div class="layout-container">
+    <div class="site-footer__grid">
+     <div class="site-footer__about">
+      <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+       <span aria-hidden="true" class="brand__mark">
+        <svg viewbox="0 0 24 24">
+         <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+         </ellipse>
+         <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+         </path>
+        </svg>
+       </span>
+       <span>
+        AmiPet
+       </span>
+      </a>
+      <p>
+       Plataforma de adopci&oacute;n responsable para conectar de forma segura a adoptantes y rescatistas.
+      </p>
+     </div>
+     <section class="site-footer__column">
+      <h3>
+       Explora
+      </h3>
+      <nav aria-label="Enlaces para explorar" class="site-footer__links">
+       <a href="catalogo.html">
+        Mascotas disponibles
+       </a>
+       <a href="../../index.html#como-funciona">
+        C&oacute;mo funciona
+       </a>
+       <a href="../publico/quienes-somos.html">
+        Qui&eacute;nes somos
+       </a>
+      </nav>
+     </section>
+     <section class="site-footer__column">
+      <h3>
+       Ayuda y pol&iacute;ticas
+      </h3>
+      <nav aria-label="Ayuda y pol&iacute;ticas" class="site-footer__links">
+       <a href="../educacion/centro-ayuda.html">
+        Centro de ayuda
+       </a>
+       <a href="../publico/terminos.html">
+        T&eacute;rminos y condiciones
+       </a>
+       <a href="../publico/privacidad.html">
+        Pol&iacute;tica de privacidad
+       </a>
+       <a href="#redes">
+        Redes sociales
+       </a>
+      </nav>
+     </section>
+    </div>
+    <div class="site-footer__bottom">
+     <span>
+      &copy; 2026 AmiPet. Todos los derechos reservados.
+     </span>
+     <span>
+      Adoptando amor, salvando vidas.
+     </span>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
