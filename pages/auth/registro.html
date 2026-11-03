@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#A88AED">
+<meta name="description" content="AmiPet, plataforma de adopción responsable de mascotas.">
+<title>Crear cuenta | AmiPet</title>
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
+<header class="site-header"><div class="layout-container site-header__inner">
+<a class="brand" href="../../index.html" aria-label="AmiPet, ir al inicio">AmiPet</a>
+<nav class="site-nav" aria-label="Navegación principal"><a href="../adopcion/catalogo.html">Adoptar</a><a href="../../index.html#como-funciona">Cómo funciona</a><a href="../publico/quienes-somos.html">Nosotros</a></nav>
+<div class="site-header__actions"><a class="button button--outline" href="login.html">Iniciar sesión</a><a class="button button--primary" href="registro.html">Crear cuenta</a></div>
+</div></header>
+<main id="main-content"><section class="auth-layout"><div class="auth-card">
+<header class="auth-card__heading"><h1>Crear cuenta</h1><p>Registra tus datos para comenzar a usar AmiPet.</p></header>
+<form class="form-stack" action="../adoptante/panel-adoptante.html" method="get">
+<div class="form-grid">
+<div class="form-field form-field--full"><label class="form-field__label" for="full-name">Nombres y apellidos</label><input autocomplete="name" class="form-field__control" id="full-name" name="nombre" placeholder="Ana Pérez" required></div>
+<div class="form-field"><label class="form-field__label" for="username">Nombre de usuario</label><input autocomplete="username" class="form-field__control" id="username" name="usuario" placeholder="ana.perez" required></div>
+<div class="form-field"><label class="form-field__label" for="dni">DNI</label><input class="form-field__control" id="dni" name="dni" inputmode="numeric" maxlength="8" minlength="8" pattern="[0-9]{8}" placeholder="12345678" required></div>
+<div class="form-field"><label class="form-field__label" for="phone">Celular</label><input class="form-field__control" id="phone" name="celular" inputmode="numeric" maxlength="9" minlength="9" pattern="[0-9]{9}" placeholder="987654321" required></div>
+<div class="form-field"><label class="form-field__label" for="email">Correo electrónico</label><input autocomplete="email" class="form-field__control" id="email" name="email" placeholder="ana@ejemplo.com" required type="email"></div>
+<div class="form-field"><label class="form-field__label" for="password">Contraseña</label><input autocomplete="new-password" class="form-field__control" id="password" name="password" minlength="8" placeholder="Mínimo 8 caracteres" required type="password"></div>
+<div class="form-field"><label class="form-field__label" for="password-confirm">Confirmar contraseña</label><input autocomplete="new-password" class="form-field__control" id="password-confirm" name="password-confirm" minlength="8" placeholder="Repite la contraseña" required type="password"></div>
+<div class="form-field form-field--full"><span class="form-field__label">Tipo de cuenta</span><div class="choice-row"><a class="choice-card" aria-current="page" href="registro.html">Adoptante</a><a class="choice-card" href="registro-rescatista.html">Rescatista</a></div></div>
+</div>
+<button class="button button--primary button--block" type="submit">Crear cuenta</button>
+</form>
+<p class="auth-card__switch">¿Vas a registrarte como rescatista? <a class="text-link" href="registro-rescatista.html">Continuar como rescatista</a></p>
+<p class="auth-card__switch">¿Ya tienes una cuenta? <a class="text-link" href="login.html">Iniciar sesión</a></p>
+<p class="form-field__help">Vista estática de TB3: la información no se guarda.</p>
+</div></section></main>
+<footer class="site-footer" id="redes"><div class="layout-container"><div class="site-footer__bottom"><span>© 2026 AmiPet. Todos los derechos reservados.</span><span>Adoptando amor, salvando vidas.</span></div></div></footer>
+</body></html>
