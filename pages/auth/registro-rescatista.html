@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#A88AED">
+<meta name="description" content="AmiPet, plataforma de adopción responsable de mascotas.">
+<title>Crear cuenta - Rescatista | AmiPet</title>
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
+<header class="site-header"><div class="layout-container site-header__inner">
+<a class="brand" href="../../index.html" aria-label="AmiPet, ir al inicio">AmiPet</a>
+<nav class="site-nav" aria-label="Navegación principal"><a href="../adopcion/catalogo.html">Adoptar</a><a href="login.html">Iniciar sesión</a></nav>
+<div class="site-header__actions"><a class="button button--outline" href="login.html">Iniciar sesión</a><a class="button button--primary" href="registro.html">Crear cuenta</a></div>
+</div></header>
+<main id="main-content"><section class="auth-layout"><div class="auth-card">
+<header class="auth-card__heading"><h1>Crear cuenta</h1><p>Completa los datos para publicar mascotas y gestionar solicitudes.</p></header>
+<div class="choice-row" aria-label="Tipo de cuenta"><a class="choice-card" href="registro.html">Adoptante</a><a class="choice-card" aria-current="step" href="registro-rescatista.html">Rescatista</a></div>
+<ol class="step-list" aria-label="Pasos de registro"><li aria-current="step">1. Datos de cuenta</li><li>2. Perfil de Rescatista</li></ol>
+<form class="form-stack" action="registro-rescatista-paso2.html" method="get">
+<div class="form-grid">
+<div class="form-field form-field--full"><label class="form-field__label" for="rescuer-name">Nombre completo</label><input class="form-field__control" id="rescuer-name" name="nombre" autocomplete="name" placeholder="Ej. Ana Pérez" required></div>
+<div class="form-field form-field--full"><label class="form-field__label" for="rescuer-id">DNI / RUC</label><input class="form-field__control" id="rescuer-id" name="documento" inputmode="numeric" pattern="([0-9]{8}|[0-9]{11})" placeholder="DNI de 8 dígitos o RUC de 11 dígitos" required></div>
+<div class="form-field form-field__full"><label class="form-field__label" for="rescuer-email">Correo electrónico</label><input class="form-field__control" id="rescuer-email" name="email" type="email" autocomplete="email" placeholder="correo@ejemplo.com" required></div>
+<div class="form-field form-field__full"><label class="form-field__label" for="rescuer-phone">Celular de contacto</label><input class="form-field__control" id="rescuer-phone" name="celular" inputmode="numeric" pattern="[0-9]{9}" placeholder="Número de celular de 9 dígitos" required></div>
+<div class="form-field"><label class="form-field__label" for="rescuer-password">Contraseña</label><input class="form-field__control" id="rescuer-password" name="password" type="password" minlength="8" placeholder="Mínimo 8 caracteres" required></div>
+<div class="form-field"><label class="form-field__label" for="rescuer-password-confirm">Confirmar contraseña</label><input class="form-field__control" id="rescuer-password-confirm" name="password-confirm" type="password" minlength="8" placeholder="Repite tu contraseña" required></div>
+</div>
+<p class="form-field__help">DNI/RUC y contraseña son privados. Los datos públicos ayudan a generar confianza.</p>
+<button class="button button--primary button--block" type="submit">Continuar</button>
+</form>
+</div></section></main>
+<footer class="site-footer"><div class="layout-container"><div class="site-footer__bottom"><span>© 2026 AmiPet. Todos los derechos reservados.</span><span>Adoptando amor, salvando vidas.</span></div></div></footer>
+</body></html>
