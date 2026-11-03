@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es-419">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#A88AED" name="theme-color"/>
+  <meta content="AmiPet, plataforma de adopci&oacute;n responsable de mascotas." name="description"/>
+  <title>
+   Actualizar estado | AmiPet
+  </title>
+  <link href="../../css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Saltar al contenido
+  </a>
+  <header class="site-header">
+   <div class="layout-container site-header__inner">
+    <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+     <span aria-hidden="true" class="brand__mark">
+      <svg viewBox="0 0 24 24">
+       <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+       </ellipse>
+       <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+       </path>
+      </svg>
+     </span>
+     <span>
+      AmiPet
+     </span>
+    </a>
+    <nav aria-label="Navegaci&oacute;n principal" class="site-nav">
+     <a href="dashboard.html">
+      Dashboard
+     </a>
+     <a href="mis-mascotas.html">
+      Mis mascotas
+     </a>
+     <a href="solicitudes.html">
+      Solicitudes
+     </a>
+     <a href="perfil-rescatista.html">
+      Perfil
+     </a>
+    </nav>
+    <div class="site-header__actions">
+     <a class="button button--outline" href="../auth/login.html">
+      Salir
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content">
+  <section class="layout-container page-intro"><h1>Mis Mascotas</h1><p>Administra la información de los peludos que tienes actualmente a cargo.</p></section>
+  <section class="layout-container page-content"><header class="split-heading"><div class="chip-list"><a class="chip chip--active" href="#pets">Todos (14)</a><a class="chip" href="#pets">Disponible (8)</a><a class="chip" href="#pets">En proceso (6)</a></div><a class="button button--primary" href="registrar-mascota.html">Añadir mascota</a></header>
+    <div class="pet-grid" id="pets"><article class="pet-card"><div class="pet-photo pet-photo--luna" role="img" aria-label="Fotografía de Luna"></div><div class="pet-card__body"><span class="status status--available">Disponible</span><h3>Luna</h3><p class="pet-card__meta">Perro · 2 años · Mediano · Surco</p><p>Registrado: 12 Feb 2026</p><a class="button button--outline button--block" href="actualizar-estado.html">Actualizar estado</a></div></article><article class="pet-card"><div class="pet-photo pet-photo--milo" role="img" aria-label="Fotografía de Milo"></div><div class="pet-card__body"><span class="status status--review">En proceso</span><h3>Milo</h3><p class="pet-card__meta">Gato · 5 años · Pequeño · Miraflores</p><p>Registrado: 08 Feb 2026</p><a class="button button--outline button--block" href="actualizar-estado.html">Actualizar estado</a></div></article></div>
+  </section>
+  <div class="modal-preview" role="dialog" aria-modal="true" aria-labelledby="status-title"><section class="modal-preview__card"><h2 id="status-title">Actualizar estado de adopción</h2><p>Luna</p><form class="form-stack" action="mis-mascotas.html" method="get"><fieldset class="form-fieldset"><legend class="form-field__label">Estado</legend><div class="choice-row"><label class="choice-card"><input type="radio" name="estado" value="Disponible" checked> Disponible</label><label class="choice-card"><input type="radio" name="estado" value="En proceso"> En proceso</label><label class="choice-card"><input type="radio" name="estado" value="Adoptada"> Adoptada</label></div></fieldset><div class="hero__actions"><a class="button button--outline" href="mis-mascotas.html">Cancelar</a><button class="button button--primary" type="submit">Guardar estado</button></div></form></section></div>
+  </main>
+  <footer class="site-footer" id="redes">
+   <div class="layout-container">
+    <div class="site-footer__grid">
+     <div class="site-footer__about">
+      <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+       <span aria-hidden="true" class="brand__mark">
+        <svg viewBox="0 0 24 24">
+         <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+         </ellipse>
+         <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+         </path>
+        </svg>
+       </span>
+       <span>
+        AmiPet
+       </span>
+      </a>
+      <p>
+       Plataforma de adopci&oacute;n responsable para conectar de forma segura a adoptantes y rescatistas.
+      </p>
+     </div>
+     <section class="site-footer__column">
+      <h3>
+       Explora
+      </h3>
+      <nav aria-label="Enlaces para explorar" class="site-footer__links">
+       <a href="../adopcion/catalogo.html">
+        Mascotas disponibles
+       </a>
+       <a href="../../index.html#como-funciona">
+        C&oacute;mo funciona
+       </a>
+       <a href="../publico/quienes-somos.html">
+        Qui&eacute;nes somos
+       </a>
+      </nav>
+     </section>
+     <section class="site-footer__column">
+      <h3>
+       Ayuda y pol&iacute;ticas
+      </h3>
+      <nav aria-label="Ayuda y pol&iacute;ticas" class="site-footer__links">
+       <a href="../educacion/centro-ayuda.html">
+        Centro de ayuda
+       </a>
+       <a href="../publico/terminos.html">
+        T&eacute;rminos y condiciones
+       </a>
+       <a href="../publico/privacidad.html">
+        Pol&iacute;tica de privacidad
+       </a>
+       <a href="#redes">
+        Redes sociales
+       </a>
+      </nav>
+     </section>
+    </div>
+    <div class="site-footer__bottom">
+     <span>
+      &copy; 2026 AmiPet. Todos los derechos reservados.
+     </span>
+     <span>
+      Adoptando amor, salvando vidas.
+     </span>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

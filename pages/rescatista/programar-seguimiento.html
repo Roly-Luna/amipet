@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es-419">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#A88AED" name="theme-color"/>
+  <meta content="AmiPet, plataforma de adopci&oacute;n responsable de mascotas." name="description"/>
+  <title>
+   Programar seguimiento | AmiPet
+  </title>
+  <link href="../../css/styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Saltar al contenido
+  </a>
+  <header class="site-header">
+   <div class="layout-container site-header__inner">
+    <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+     <span aria-hidden="true" class="brand__mark">
+      <svg viewBox="0 0 24 24">
+       <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+       </ellipse>
+       <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+       </path>
+      </svg>
+     </span>
+     <span>
+      AmiPet
+     </span>
+    </a>
+    <nav aria-label="Navegaci&oacute;n principal" class="site-nav">
+     <a href="dashboard.html">
+      Dashboard
+     </a>
+     <a href="mis-mascotas.html">
+      Mis mascotas
+     </a>
+     <a href="solicitudes.html">
+      Solicitudes
+     </a>
+     <a href="perfil-rescatista.html">
+      Perfil
+     </a>
+    </nav>
+    <div class="site-header__actions">
+     <a class="button button--outline" href="../auth/login.html">
+      Salir
+     </a>
+    </div>
+   </div>
+  </header>
+  <main id="main-content">
+   <section class="layout-container page-intro">
+    <h1>
+     Programar seguimiento
+    </h1>
+    <p>
+     Acuerda una fecha con la persona adoptante y registra el tipo de actualizaci&oacute;n solicitada.
+    </p>
+   </section>
+   <section class="layout-container page-content">
+    <form class="panel form-stack" action="dashboard.html" method="get">
+     <div class="form-grid">
+      <div class="form-field">
+       <label class="form-field__label" for="follow-pet">
+        Mascota
+       </label>
+       <select class="form-field__control" id="follow-pet">
+        <option>
+         Luna
+        </option>
+        <option>
+         Milo
+        </option>
+        <option>
+         Hachi
+        </option>
+       </select>
+      </div>
+      <div class="form-field">
+       <label class="form-field__label" for="follow-person">
+        Persona adoptante
+       </label>
+       <select class="form-field__control" id="follow-person">
+        <option>
+         Diego P&eacute;rez
+        </option>
+        <option>
+         Luc&iacute;a Fern&aacute;ndez
+        </option>
+        <option>
+         Carlos Mendoza
+        </option>
+       </select>
+      </div>
+      <div class="form-field">
+       <label class="form-field__label" for="follow-date">
+        Fecha acordada
+       </label>
+       <input class="form-field__control" id="follow-date" required="" type="date"/>
+      </div>
+      <div class="form-field">
+       <label class="form-field__label" for="follow-channel">
+        Medio de contacto
+       </label>
+       <select class="form-field__control" id="follow-channel" required="">
+        <option value="">
+         Selecciona
+        </option>
+        <option>
+         Correo electr&oacute;nico
+        </option>
+        <option>
+         Tel&eacute;fono
+        </option>
+        <option>
+         Videollamada
+        </option>
+       </select>
+      </div>
+      <div class="form-field form-field--full">
+       <label class="form-field__label" for="follow-request">
+        Informaci&oacute;n solicitada
+       </label>
+       <textarea class="form-field__control" id="follow-request" placeholder="Ej. foto de adaptaci&oacute;n y comentario sobre convivencia" required=""></textarea>
+      </div>
+     </div>
+     <button class="button button--primary" type="submit">
+      Guardar seguimiento
+     </button>
+    </form>
+   </section>
+  </main>
+  <footer class="site-footer" id="redes">
+   <div class="layout-container">
+    <div class="site-footer__grid">
+     <div class="site-footer__about">
+      <a aria-label="AmiPet, ir al inicio" class="brand" href="../../index.html">
+       <span aria-hidden="true" class="brand__mark">
+        <svg viewBox="0 0 24 24">
+         <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+         </ellipse>
+         <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+         </ellipse>
+         <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+         </path>
+        </svg>
+       </span>
+       <span>
+        AmiPet
+       </span>
+      </a>
+      <p>
+       Plataforma de adopci&oacute;n responsable para conectar de forma segura a adoptantes y rescatistas.
+      </p>
+     </div>
+     <section class="site-footer__column">
+      <h3>
+       Explora
+      </h3>
+      <nav aria-label="Enlaces para explorar" class="site-footer__links">
+       <a href="../adopcion/catalogo.html">
+        Mascotas disponibles
+       </a>
+       <a href="../../index.html#como-funciona">
+        C&oacute;mo funciona
+       </a>
+       <a href="../publico/quienes-somos.html">
+        Qui&eacute;nes somos
+       </a>
+      </nav>
+     </section>
+     <section class="site-footer__column">
+      <h3>
+       Ayuda y pol&iacute;ticas
+      </h3>
+      <nav aria-label="Ayuda y pol&iacute;ticas" class="site-footer__links">
+       <a href="../educacion/centro-ayuda.html">
+        Centro de ayuda
+       </a>
+       <a href="../publico/terminos.html">
+        T&eacute;rminos y condiciones
+       </a>
+       <a href="../publico/privacidad.html">
+        Pol&iacute;tica de privacidad
+       </a>
+       <a href="#redes">
+        Redes sociales
+       </a>
+      </nav>
+     </section>
+    </div>
+    <div class="site-footer__bottom">
+     <span>
+      &copy; 2026 AmiPet. Todos los derechos reservados.
+     </span>
+     <span>
+      Adoptando amor, salvando vidas.
+     </span>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
