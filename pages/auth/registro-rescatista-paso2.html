@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="es-419">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#A88AED">
-<meta name="description" content="AmiPet, plataforma de adopción responsable de mascotas.">
-<title>Crear cuenta - Perfil de Rescatista | AmiPet</title>
-<link rel="stylesheet" href="../../css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#A88AED">
+  <meta name="description" content="AmiPet, plataforma de adopción responsable de mascotas.">
+  <title>Crear cuenta - Perfil de Rescatista | AmiPet</title>
+  <link rel="stylesheet" href="../../css/styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Saltar al contenido</a>
-<header class="site-header"><div class="layout-container site-header__inner">
-<a class="brand" href="../../index.html" aria-label="AmiPet, ir al inicio">AmiPet</a>
-<nav class="site-nav" aria-label="Navegación principal"><a href="../adopcion/catalogo.html">Adoptar</a><a href="login.html">Iniciar sesión</a></nav>
-<div class="site-header__actions"><a class="button button--outline" href="login.html">Iniciar sesión</a><a class="button button--primary" href="registro.html">Crear cuenta</a></div>
-</div></header>
-<main id="main-content"><section class="auth-layout"><div class="auth-card">
-<header class="auth-card__heading"><h1>Crear cuenta</h1><p>Completa los datos para publicar mascotas y gestionar solicitudes.</p></header>
-<div class="choice-row" aria-label="Tipo de cuenta"><a class="choice-card" href="registro.html">Adoptante</a><a class="choice-card" aria-current="step" href="registro-rescatista.html">Rescatista</a></div>
-<ol class="step-list" aria-label="Pasos de registro"><li>1. Datos de cuenta</li><li aria-current="step">2. Perfil de Rescatista</li></ol>
-<form class="form-stack" action="../rescatista/dashboard.html" method="get">
-<fieldset class="form-fieldset"><legend class="form-field__label">¿Qué tipo de rescatista eres?</legend><div class="choice-row"><label class="choice-card"><input type="radio" name="tipo-rescatista" value="independiente" required> Rescatista independiente</label><label class="choice-card"><input type="radio" name="tipo-rescatista" value="refugio"> Refugio</label><label class="choice-card"><input type="radio" name="tipo-rescatista" value="organizacion"> Organización / Asociación</label></div></fieldset>
-<div class="form-grid">
-<div class="form-field form-field--full"><label class="form-field__label" for="organization">Nombre del refugio / organización</label><input class="form-field__control" id="organization" name="organizacion" placeholder="Ej. Huellitas Felices"></div>
-<p class="form-field__help form-field--full">Opcional si eres rescatista independiente. Obligatorio para Refugio u Organización / Asociación.</p>
-<div class="form-field form-field--full"><label class="form-field__label" for="coverage">Zona de cobertura</label><input class="form-field__control" id="coverage" name="cobertura" placeholder="Distrito / provincia / región" required></div>
-<div class="form-field form-field--full"><label class="form-field__label" for="social">Redes sociales (opcional)</label><input class="form-field__control" id="social" name="redes" placeholder="Instagram, Facebook o sitio web"></div>
-<div class="form-field form-field--full"><label class="form-field__label" for="animal-count">Número aproximado de animales a cargo (opcional)</label><input class="form-field__control" id="animal-count" name="animales" type="number" min="0" placeholder="Ej. 10 animales"></div>
-</div>
-<div class="hero__actions"><a class="button button--outline" href="registro-rescatista.html">Volver</a><button class="button button--primary" type="submit">Registrarme</button></div>
-<p class="form-field__help">Vista estática de TB3: los datos no se guardan en un servidor.</p>
-</form>
-</div></section></main>
-<footer class="site-footer"><div class="layout-container"><div class="site-footer__bottom"><span>© 2026 AmiPet. Todos los derechos reservados.</span><span>Adoptando amor, salvando vidas.</span></div></div></footer>
-</body></html>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="layout-container site-header__inner">
+      <a class="brand" href="../../index.html" aria-label="AmiPet, ir al inicio"><span aria-hidden="true" class="brand__mark">
+      <svg viewbox="0 0 24 24">
+       <ellipse cx="6.3" cy="7.2" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="11.7" cy="4.8" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="17.4" cy="7.1" rx="2.4" ry="3.1">
+       </ellipse>
+       <ellipse cx="20" cy="12" rx="2.1" ry="2.8">
+       </ellipse>
+       <path d="M12 10.2c-3.4 0-7.3 4.1-7.3 7.5 0 2.2 1.7 3.4 3.8 3.4 1.5 0 2.4-.7 3.5-.7s2 .7 3.5.7c2.1 0 3.8-1.2 3.8-3.4 0-3.4-3.9-7.5-7.3-7.5Z">
+       </path>
+      </svg>
+     </span><span>AmiPet</span></a>
+      <nav class="site-nav" aria-label="Navegación principal"><a href="../adopcion/catalogo.html">Adoptar</a><a href="login.html">Iniciar sesión</a></nav>
+      <div class="site-header__actions"><a class="button button--outline" href="../auth/login.html">Iniciar sesión</a><a class="button button--primary" href="../auth/registro.html">Crear cuenta</a></div>
+    </div>
+  </header>
+  <main id="main-content">
+  <section class="auth-layout"><div class="auth-card">
+    <header class="auth-card__heading"><h1>Crear cuenta</h1><p>Completa los datos para publicar mascotas y gestionar solicitudes.</p></header>
+    <div class="choice-row" aria-label="Tipo de cuenta"><a class="choice-card" href="registro.html">Adoptante</a><a class="choice-card" aria-current="step" href="registro-rescatista.html">Rescatista</a></div>
+    <ol class="step-list" aria-label="Pasos de registro"><li>1. Datos de cuenta</li><li aria-current="step">2. Perfil de Rescatista</li></ol>
+    <form class="form-stack" action="../rescatista/dashboard.html" method="get">
+      <fieldset class="form-fieldset"><legend class="form-field__label">¿Qué tipo de rescatista eres?</legend><div class="choice-row"><label class="choice-card"><input type="radio" name="tipo-rescatista" value="independiente" required> Rescatista independiente</label><label class="choice-card"><input type="radio" name="tipo-rescatista" value="refugio"> Refugio</label><label class="choice-card"><input type="radio" name="tipo-rescatista" value="organizacion"> Organización / Asociación</label></div></fieldset>
+      <div class="form-grid">
+        <div class="form-field form-field--full"><label class="form-field__label" for="organization">Nombre del refugio / organización</label><input class="form-field__control" id="organization" placeholder="Ej. Huellitas Felices"></div>
+        <p class="form-field__help form-field--full">Opcional si eres rescatista independiente. Obligatorio para Refugio u Organización / Asociación.</p>
+        <div class="form-field form-field--full"><label class="form-field__label" for="coverage">Zona de cobertura</label><input class="form-field__control" id="coverage" placeholder="Distrito / provincia / región" required></div>
+        <div class="form-field form-field--full"><label class="form-field__label" for="social">Redes sociales (opcional)</label><input class="form-field__control" id="social" placeholder="Instagram, Facebook o sitio web"></div>
+        <div class="form-field form-field--full"><label class="form-field__label" for="animal-count">Número aproximado de animales a cargo (opcional)</label><input class="form-field__control" id="animal-count" type="number" min="0" placeholder="Ej. 10 animales"></div>
+      </div>
+      <div class="hero__actions"><a class="button button--outline" href="registro-rescatista.html">Volver</a><button class="button button--primary" type="submit">Registrarme</button></div>
+      <p class="form-field__help">Vista estática de TB3: los datos no se guardan en un servidor.</p>
+    </form>
+  </div></section></main>
+  <footer class="site-footer"><div class="layout-container"><div class="site-footer__bottom"><span>© 2026 AmiPet. Todos los derechos reservados.</span><span>Adoptando amor, salvando vidas.</span></div></div></footer>
+</body>
+</html>
